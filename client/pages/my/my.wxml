@@ -1,0 +1,61 @@
+<!--pages/my/my.wxml-->
+<view class="container">
+  <view class="mybg">
+    <view class="personal">
+      <view class="personal-img" bindtap="personalbtn">
+        <image class="item-img" src="../../assets/images/icon_add.png"></image>
+      </view>
+      <view class="personal-name">
+        <view class="item-name">
+          <text>苏政宏</text>
+          <image src="../../assets/icons/man.png"></image>
+        </view>
+        <view class="real-name">
+        <image src="../../assets/images/alname.png" class='name-already'></image>
+          <text>已实名认证</text>
+        </view>
+      </view>
+    </view>
+    <view class="set-up" bindtap="seTup">
+      <image src="../../assets/images/set.png" class='set-img'></image>
+    </view>
+    <view class='container-goname' catchtap="realname">
+      <image src="../../assets/images/realname.png" class='goname-img'></image>
+      <text>去实名</text>
+      <image src='../../assets/images/forward.png' class='goname-fwd'></image>
+    </view>
+  </view>
+
+  <view class="line-height"></view>
+
+
+  <view class='personal-content'>
+    <view class="personal-list" bindtap="personalAccount">
+      <text class="personal-list-text">个人账户</text>
+      <image class="personal-list-image" src="../../assets/icons/wodezhanghu.png"></image>
+    </view>
+    <view class="person-line"></view>
+    <view class="personal-list" bindtap="Imagerecords">
+      <text class="personal-list-text">卖图记录</text>
+      <image class="personal-list-image" src="../../assets/icons/lishi.png"></image>
+    </view>
+    <view class="person-line"></view>
+    <view class="personal-list" bindtap="feedbackBtn">
+      <text class="personal-list-text">意见反馈</text>
+      <image class="personal-list-image" src="../../assets/icons/yijianfankui.png"></image>
+    </view>
+    <view class="person-line"></view>
+    <view class="personal-list" >
+      <text class="personal-list-text">新手帮助</text>
+      <image class="personal-list-image" src="../../assets/icons/help.png"></image>
+    </view>
+    <view class="person-line"></view>
+    <view class="personal-list">
+      <text class="personal-list-text">客服</text>
+      <text class='personal-list-text'>400-060-5186</text>
+    </view>
+
+
+  </view>
+
+</view>

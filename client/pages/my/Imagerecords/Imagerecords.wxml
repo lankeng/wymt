@@ -1,0 +1,30 @@
+<view class='record'>
+  <view wx:if="{{sailresult}}">
+    <view class='record-con' wx:for="{{record}}" wx:for-item="record" wx:key='index'>
+      <view class='record-date'>{{record.date}}</view>
+      <view class='record-main'>
+        <view class='record-item' wx:for="{{record.content}}" wx:for-item="item" wx:key='index'>
+          <view class='item-image'>
+            <image src='{{item.url}}'></image>
+          </view>
+          <view class='item-main'>
+            <view class='item-total'>{{item.total}}</view>
+            <view class='item-block clearfix'>
+              <view class='item-money'>
+                <text class='item-unit'>¥</text>
+                <text class='item-number'>{{item.money}}</text>
+              </view>
+              <view class='item-button' style='color:{{item.checked==true?"green":"#666666"}};border-color:{{item.checked==true?"green":"#666666"}}'>{{item.state}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:else>
+    <view class='empty'>
+      <image src='/assets/images/empty.png' class='empty-img'></image>
+      <view class='empty-text'>暂无卖图记录哦</view>
+    </view>
+  </view>
+</view>

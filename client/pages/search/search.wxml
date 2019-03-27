@@ -1,0 +1,92 @@
+<view class="main">
+  <view class="search-box">
+    <input class="search-input" placeholder="搜索" value="{{value}}" bindinput='getInput' />
+    <icon class="weui-icon-search_in-box search-icon" type="search" size="14"></icon>
+    <button class="search-btn" bindtap='search'>{{search}}</button>
+  </view>
+
+  <view wx:if="{{havcon}}">
+    <view class='empty'>
+      <image src='/assets/images/noresult.png' class='empty-img'></image>
+      <view class='empty-text'>抱歉，没找到你搜索的内容，换个关键词试试</view>
+    </view>
+  </view>
+  <view wx:else>
+    <view class='result'>
+      <view class="picture-list">
+        <view class="picture-car">
+          <view class="picture-car-content">
+            <view class='content-imga'>
+            <image src="../../assets/images/02.png"></image>
+            </view>
+            <text class="picture-car-title">麦田救灾演绎军民鱼水情</text>
+            <view class="picture-car-price">
+              <text class="car-price"><text class="symbol">￥</text><text class='price-num'>10</text></text>
+              <text class="car-state">已下架</text>
+            </view>
+          </view>
+        </view>
+        <view class="picture-car">
+          <view class="picture-car-content">
+            <view class='content-imga'>
+            <image src="../../assets/images/02.png"></image>
+            </view>
+            <text class="picture-car-title">麦田救灾演绎军民鱼水情</text>
+            <view class="picture-car-price">
+              <text class="car-price"><text class="symbol">￥</text><text class='price-num'>10</text></text>
+              <text class="car-state car-state-green">售卖中</text>
+            </view>
+          </view>
+        </view>
+        <view class="picture-car">
+          <view class="picture-car-content">
+            <view class='content-imga'>
+            <image src="../../assets/images/02.png"></image>
+            </view>
+            <text class="picture-car-title">麦田救灾演绎军民鱼水情</text>
+            <view class="picture-car-price">
+              <text class="car-price"><text class="symbol">￥</text><text class='price-num'>10</text></text>
+              <text class="car-state car-state-darkred">审核中</text>
+            </view>
+          </view>
+        </view>
+        <view class="picture-car">
+          <view class="picture-car-content">
+            <view class='content-imgb'>
+            <image src="../../assets/images/02.png"></image>
+            </view>
+            <text class="picture-car-title">麦田救灾演绎军民鱼水情</text>
+            <view class="picture-car-price">
+              <text class="car-price"><text class="symbol">￥</text><text class='price-num'>10</text></text>
+              <text class="car-state">已下架</text>
+            </view>
+          </view>
+        </view>
+        <view class="picture-car">
+          <view class="picture-car-content">
+            <view class='content-imgb'>
+            <image src="../../assets/images/02.png"></image>
+            </view>
+            <text class="picture-car-title">麦田救灾演绎军民鱼水情</text>
+            <view class="picture-car-price">
+              <text class="car-price"><text class="symbol">￥</text><text class='price-num'>10</text></text>
+              <text class="car-state">已下架</text>
+            </view>
+          </view>
+        </view>
+        <view class="picture-car">
+          <view class="picture-car-content">
+            <view class='content-imgb'>
+            <image src="../../assets/images/02.png"></image>
+            </view>
+            <text class="picture-car-title">麦田救灾演绎军民鱼水情</text>
+            <view class="picture-car-price">
+              <text class="car-price"><text class="symbol">￥</text><text class='price-num'>10</text></text>
+              <text class="car-state">已下架</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

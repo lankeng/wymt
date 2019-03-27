@@ -1,0 +1,23 @@
+<!--pages/my/editphone/editphone.wxml-->
+<view class="other">
+  <text>请输入新的手机号并验证</text>
+</view>
+<view class="card-edit">
+  <form>
+    <view class="card-edit-input">
+      <input class="card-edit-inputnumber" placeholder="新手机号" placeholder-class='placeholder'></input>
+      <view>
+        <text class="card-code">获取验证码</text>
+      </view>
+    </view>
+    <view class="card-line"></view>
+    <view class="card-edit-input">
+      <input class="card-edit-inputnumber" placeholder="验证码" placeholder-class='placeholder'></input>
+    </view>
+    <view class="btnbox card-btn">
+      <view>
+        <button class="btn-bule-real" type="primary" bindtap="validation">验证</button>
+      </view>
+    </view>
+  </form>
+</view>

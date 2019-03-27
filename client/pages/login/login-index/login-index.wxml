@@ -1,0 +1,15 @@
+<!--pages/login/login-index/login-index.wxml-->
+<view class="cross">
+  <view class="cross-line">
+    <text class="cross-title">推荐方式登录</text>
+  </view>
+</view>
+<!--登录按钮-->
+<view class="btnbox">
+  <view>
+    <button class="btn-bule-real" type="primary" bindtap='listenerwx'><image src="../../../assets/icons/weixin.png"></image>微信授权登录</button>
+  </view>
+  <view>
+    <button class="btn-bule-empty" type="primary" bindtap="onquick"><image src="../../../assets/icons/iphone.png"></image>手机快捷登录</button>
+  </view>
+</view>

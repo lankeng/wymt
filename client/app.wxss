@@ -1,0 +1,57 @@
+/**app.wxss**/
+
+/*按钮公共样式*/
+.btnbox {
+  margin: 0 30rpx;
+}
+.btnempty {
+  margin: 0;
+}
+.btnbox view {
+  margin-bottom: 30rpx;
+}
+.btnbox .btn-bule-real {
+  background:#FFCC00;
+}
+.btnbox .btn-bule-empty {
+  background-color: #fff;
+  border: 2rpx solid #FFCC00;
+  color: #FFCC00;
+  border-radius: 6px;
+}
+.btnbox .btn-bule-real image {
+  position: relative;
+  top: 10rpx;
+  right: 14rpx;
+  width: 48rpx;
+  height: 48rpx;
+  display: inline-block;
+}
+.btnbox .btn-bule-empty image {
+  position: relative;
+  top: 10rpx;
+  right: 14rpx;
+  width: 48rpx;
+  height: 48rpx;
+  display: inline-block;
+}
+button::after{
+border:none;
+}
+
+/*公共的间距*/
+.line-height{
+  height: 44rpx;
+  background: #F5F5F5;
+}
+/*其他信息，手机号添加提示*/
+.other {
+  background: #f5f5f5;
+}
+.other text {
+  padding-left: 30rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 30rpx;
+  color: #666;
+}

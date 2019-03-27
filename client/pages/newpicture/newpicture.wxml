@@ -1,0 +1,110 @@
+<!--index.wxml-->
+<view class="top-location">
+  <view class="nav">
+    <view class="nav-son {{shownavindex == 2? 'active' : ''}}" bindtap="listnumber" data-nav="2">
+      <view class="content {{viewDataSet ==catalogSelect  ? '':'viewDataSet'}}">{{viewDataSet}}</view>
+      <view class="icon"></view>
+    </view>
+    <view class="nav-son">
+      <navigator url='../search/search'>
+        <view class="content">
+          <image class="search" src="../../assets/icons/search.png"></image>
+        </view>
+      </navigator>
+    </view>
+  </view>
+
+  
+  <view class="temp temp2 {{gsopen ? 'slidown' : 'slidup'}} {{gsshow ? 'disappear':''}}">
+    <block wx:for="{{draft}}" wx:key="{{index}}">
+      <view class="{{item.select == catalogSelect ? 'active_color':''}}" bindtap="chooseCatalog" data-select="{{item.select}}" data-text=" {{item.gaoshu}}">
+        {{item.gaoshu}}
+      </view>
+    </block>
+  </view>
+  <view class="fullbg {{isfull ?'fullopacity':''}}" bindtap="hidebg"></view>
+</view>
+<view class="page">
+  <view>
+    <view class="picture-list">
+      <view class="picture-car">
+        <view class="picture-car-content">
+          <view class='content-imga' bindtap='imgdetail'>
+          <image src="../../assets/images/background.png"></image>
+          </view>
+          <text class="picture-car-title">麦田救灾演绎军民鱼水情</text>
+          <view class="picture-car-price">
+            <text class="car-price"><text class="symbol">￥</text><text class='price-num'>10</text></text>
+          </view>
+        </view>
+      </view>
+      <view class="picture-car">
+        <view class="picture-car-content">
+          <view class='content-imga' bindtap='imgdetail'>
+          <image src="../../assets/images/background.png"></image>
+          </view>
+          <text class="picture-car-title">麦田救灾演绎军民鱼水情</text>
+          <view class="picture-car-price">
+            <text class="car-price"><text class="symbol">￥</text><text class='price-num'>10</text></text>
+          </view>
+        </view>
+      </view>
+      <view class="picture-car">
+        <view class="picture-car-content">
+          <view class='content-imga' bindtap='imgdetail'>
+          <image src="../../assets/images/background.png"></image>
+          </view>
+          <text class="picture-car-title">麦田救灾演绎军民鱼水情</text>
+          <view class="picture-car-price">
+            <text class="car-price"><text class="symbol">￥</text><text class='price-num'>10</text></text>
+          </view>
+        </view>
+      </view>
+      <view class="picture-car">
+        <view class="picture-car-content">
+          <view class='content-imgb' bindtap='imgdetail'>
+          <image src="../../assets/images/background.png"></image>
+          </view>
+          <text class="picture-car-title">麦田救灾演绎军民鱼水情</text>
+          <view class="picture-car-price">
+            <text class="car-price"><text class="symbol">￥</text><text class='price-num'>10</text></text>
+          </view>
+        </view>
+      </view>
+      <view class="picture-car">
+        <view class="picture-car-content">
+          <view class='content-imgb' bindtap='imgdetail'>
+          <image src="../../assets/images/background.png"></image>
+          </view>
+          <text class="picture-car-title">麦田救灾演绎军民鱼水情</text>
+          <view class="picture-car-price">
+            <text class="car-price"><text class="symbol">￥</text><text class='price-num'>10</text></text>
+          </view>
+        </view>
+      </view>
+      <view class="picture-car">
+        <view class="picture-car-content">
+          <view class='content-imgb' bindtap='imgdetail'>
+          <image src="../../assets/images/background.png"></image>
+          </view>
+          <text class="picture-car-title">麦田救灾演绎军民鱼水情</text>
+          <view class="picture-car-price">
+            <text class="car-price"><text class="symbol">￥</text><text class='price-num'>10</text></text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <!--卖图按钮-->
+  <view class="maitu" bindtap="sourcebtn">
+    <text class="maitu-btn">卖图</text>
+  </view>
+  <view class="news">
+    <image src='../../assets/images/news.png' class='news-img'></image>
+    <text class='news-txt'>张xx通过我要卖图赚了10元</text>
+  </view>
+
+
+</view>

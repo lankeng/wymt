@@ -1,0 +1,122 @@
+<!--pages/my/editinfo/editinfo.wxml-->
+<import src="../../../citymdoel/citymdoel.wxml"/>
+<view class="container">
+  <view class="info-cont">
+    <view class="infoMain">
+      <view class="info-items">
+        <text class="info-title info-padding">头像</text>
+        <view class="infoText" bindtap="setPhotoinfo">
+          <view class="userinfo-view">
+             <image wx:if="{{imgUrl!=null}}" class="userinfo-avatar userinfo-images" src="{{imgUrl}}" ></image>
+            <image wx:else class="userinfo-avatar userinfo-images" src="{{userInfo.avatarUrl}}"></image> <!-- userInfo.avatarUrl 是获取用户头像 -->
+            <image class="menu-item-arrow arrowright" src="../../../assets/icons/arrowright.png"></image>
+          </view>
+        </view>
+      </view>
+      <view class="info-items">
+        <view class="infoTitle">
+          <text class="info-title">真实姓名</text>
+        </view>
+        <view class="infoText">
+          <input type='text' value='Joyce' class="info-input"></input>
+        </view>
+      </view>
+      <view class="info-items" bindtap="listenerphone">
+        <view class="infoTitle">
+          <text class="info-title">手机号</text>
+        </view>
+        <view class="infoText">
+          <text class="info-motto">13800138000</text>
+          <image class="menu-item-arrow" src="../../../assets/icons/arrowright.png"></image>
+        </view>
+      </view>
+
+
+      <picker mode="selector" range="{{array}}" value="{{index}}" bindchange="listenerPickersex" class="seletor">
+        <view class="info-items">
+          <view class="infoTitle">
+            <text class="info-title">性别</text>
+          </view>
+          <view class="infoText">
+            <text class="info-motto">{{array[index]}}</text>
+            <image class="menu-item-arrow" src="../../../assets/icons/arrowright.png"></image>
+          </view>
+        </view>
+      </picker>
+
+      <view class="info-items outborder">
+        <view class="infoTitle">
+          <text class="info-title">邮箱</text>
+        </view>
+        <view class="infoText">
+          <!-- <text class="info-motto">123456@qq.com</text> -->
+          <input type='text' value='123456@qq.com' class="info-input" style='text-align:right'></input>
+        </view>
+      </view>
+      <view class="other">
+        <text>其他信息</text>
+      </view>
+      <view class="info-items">
+        <view class="infoTitle">
+          <text class="info-title">公司</text>
+        </view>
+        <view class="infoText">
+          <input type='text' value='广州麦媒信息科技有限公司' class="info-input"></input>
+        </view>
+      </view>
+      <view class="info-items">
+        <view class="infoTitle">
+          <text class="info-title">部门</text>
+        </view>
+        <view class="infoText">
+          <input type='text' value='公关' class="info-input"></input>
+
+        </view>
+      </view>
+      <view class="info-items">
+        <view class="infoTitle">
+          <text class="info-title">职位</text>
+        </view>
+        <view class="infoText">
+          <input type="text" value="媒体" class="info-input"></input>
+
+        </view>
+      </view>
+      <view class="info-items">
+        <view class="infoTitle">
+          <text class="info-title">行业</text>
+        </view>
+        <view class="infoText">
+          <input type="text" value="媒体" class="info-input"></input>
+        </view>
+      </view>
+      <view class="info-items" bindtap="translate">
+        <view class="infoTitle">
+          <text class="info-title">地址</text>
+        </view>
+        <view class="infoText">
+          <text class="info-motto">{{province}} {{city}} {{county}}</text>
+          <image class="menu-item-arrow" src="../../../assets/icons/arrowright.png"></image>
+        </view>
+      </view>
+      <view class="info-items outborder info-items-height">
+        <view class="infoTitle">
+          <text class="info-title"></text>
+        </view>
+        <view class="infoText">
+          <input type="text" value="新港中路珠影蓝谷232" class="info-input"></input>
+        </view>
+      </view>
+      <view class="line-height"></view>
+      <view class="btnbox info-btn">
+        <view class="info-btn">
+          <button class="btn-bule-real" type="primary" bindtap='tosave'>保存</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='suc-save' animation='{{alphaData}}'>
+保存成功
+</view>
+<template is="areaData" data="{{...item}}"/>

@@ -1,0 +1,147 @@
+/* pages/login/login-form/login-form.wxss */
+
+.register {
+  margin: 76rpx 60rpx 46rpx;
+}
+
+.register .register-title {
+  display: block;
+  font-size: 56rpx;
+}
+
+.login-from {
+  margin: 0 60rpx;
+}
+
+.input-view {
+  display: flex;
+  justify-content: row;
+  padding: 40rpx 0;
+  border-bottom: 1rpx solid #eee;
+}
+
+.input-view .input-text {
+  font-size: 32rpx;
+  width: 100%;
+  z-index: 0;
+}
+
+.input-view .input-width {
+  width: 70%;
+  z-index: 0;
+}
+
+/*验证码*/
+
+.get-code {
+  padding: 2rpx 0;
+  width: 30%;
+  text-align: right;
+  font-size: 32rpx;
+  color: #666;
+  font-weight: 500;
+}
+
+.tip {
+  margin: 40rpx 30rpx;
+}
+
+.tip .tip-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 22rpx;
+  color: #999;
+  height: 50rpx;
+}
+
+.tip-title .tip-service {
+  color: #b95b0e;
+}
+
+.placeholder {
+  color: #c8cbcc;
+  font-size: 32rpx;
+}
+
+.btn-bule-real {
+  background-color: #ffda44;
+  border-radius: 10rpx;
+  font-size: 36rpx;
+  color: #fff;
+}
+
+.backup-slf {
+  width: 26rpx;
+  height: 26rpx;
+}
+
+.backup {
+  width: 26rpx;
+  height: 26rpx;
+  margin: auto;
+  padding-top: 420rpx;
+}
+
+.loginback {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  display: none
+}
+
+.suc-login {
+  position: absolute;
+  top: 400rpx;
+  left: 118rpx;
+  width: 530rpx;
+  height: 420rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  text-align: center;
+  display: none
+}
+
+.login-image {
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 80rpx;
+}
+
+.login-text {
+  color: #333;
+  font-size: 36rpx;
+  font-weight: 500;
+  margin-top: 15rpx;
+}
+
+.suctologin {
+  opacity: 0;
+}
+
+.loginbacka {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  display: block
+}
+
+.suc-logina {
+  z-index: 11;
+  position: absolute;
+  top: 400rpx;
+  left: 118rpx;
+  width: 530rpx;
+  height: 420rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  text-align: center;
+  display: block
+}

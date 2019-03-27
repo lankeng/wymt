@@ -1,0 +1,25 @@
+<!--pages/my/account/drawmoney/drawmoney.wxml-->
+<view class="drawmoney">
+  <view class="drawmoney-content">
+    <view class="money-box">
+      <view class="money-box-title">
+        <text>提现金额</text>
+      </view>
+      <view class="money-symbol">
+        <view class="symbol">
+        <image src="../../../../assets/images/money.png"></image>
+        </view>
+        <input type="number" class="money-input"></input>
+      </view>
+      <view class="money-prompt">
+        <text class="prompt-balance">当前零钱余额100元，</text>
+        <text class="extract-btn">全部提现</text>
+      </view>
+      <view class="drawmoney-btn">
+        <button type="primary" disabled class="drawmoney-btn-color">提现</button>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="prompt"><text>提现手续费3%，提现预计在1到3天内到账。</text></view>
+<view class='ofenques'>常见问题</view>

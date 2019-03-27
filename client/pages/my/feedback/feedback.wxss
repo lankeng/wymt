@@ -1,0 +1,24 @@
+/* pages/my/feedback/feedback.wxss */
+.feedcack{
+ margin: 30rpx 30rpx 60rpx;
+ 
+}
+.feedcack-text{
+  padding: 10rpx;
+  width: 100%;
+  font-size: 26rpx;
+  border: 1rpx solid #aeaeae;
+  border-radius: 6rpx;
+  box-sizing: border-box;
+}
+.feedcack-text-counter{
+  padding-top: 20rpx;
+  font-size: 26rpx;
+  color: #b2b2b2;
+  text-align: right;
+}
+.btn-bule-real{
+  background-color: #FFDA44;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}

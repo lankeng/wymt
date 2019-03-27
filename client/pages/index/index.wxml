@@ -1,0 +1,125 @@
+<!--index.wxml-->
+<view class="top-location">
+  <view class="nav">
+    <view class="nav-son borders {{shownavindex == 1? 'active' : ''}}" bindtap="listline" data-nav="1">
+      <view class="content {{lineDataSet == lineSelect ?'':'lineDataSet'}}">{{lineDataSet}}</view>
+      <view class="icon"></view>
+    </view>
+    <view class="nav-son {{shownavindex == 2? 'active' : ''}}" bindtap="listnumber" data-nav="2">
+      <view class="content {{viewDataSet ==catalogSelect  ? '':'viewDataSet'}}">{{viewDataSet}}</view>
+      <view class="icon"></view>
+    </view>
+    <view class="nav-son">
+      <navigator url='../search/search'>
+        <view class="content">
+          <image class="search" src="../../assets/icons/search.png"></image>
+        </view>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="temp temp1 {{lineopen ? 'slidown' : 'slidup'}} {{lineshow ? 'disappear':''}}">
+    <block wx:for="{{lineMouth}}" wx:key="{{index}}">
+      <view class="{{item.select == lineSelect ? 'active_color':''}}" bindtap="lineMouthBtn" data-select="{{item.select}}" data-text="{{item.lineMouths}}">
+        {{item.lineMouths}}
+      </view>
+    </block>
+  </view>
+  <view class="temp temp2 {{gsopen ? 'slidown' : 'slidup'}} {{gsshow ? 'disappear':''}}">
+    <block wx:for="{{draft}}" wx:key="{{index}}">
+      <view class="{{item.select == catalogSelect ? 'active_color':''}}" bindtap="chooseCatalog" data-select="{{item.select}}" data-text=" {{item.gaoshu}}">
+        {{item.gaoshu}}
+      </view>
+    </block>
+  </view>
+  <view class="fullbg {{isfull ?'fullopacity':''}}" bindtap="hidebg"></view>
+</view>
+<view class="page">
+  <view>
+    <view class="picture-list">
+      <view class="picture-car">
+        <view class="picture-car-content">
+          <view class='content-imga'>
+            <image src="../../assets/images/02.png"></image>
+          </view>
+          <text class="picture-car-title">麦田救灾演绎军民鱼水情</text>
+          <view class="picture-car-price">
+            <text class="car-price"><text class="symbol">￥</text>
+            <text class='price-num'>10</text></text>
+            <text class="car-state">已下架</text>
+          </view>
+        </view>
+      </view>
+      <view class="picture-car">
+        <view class="picture-car-content">
+          <view class='content-imga'>
+            <image src="../../assets/images/02.png"></image>
+          </view>
+          <text class="picture-car-title">麦田救灾演绎军民鱼水情</text>
+          <view class="picture-car-price">
+            <text class="car-price"><text class="symbol">￥</text>
+            <text class='price-num'>10</text></text>
+            <text class="car-state car-state-green">售卖中</text>
+          </view>
+        </view>
+      </view>
+      <view class="picture-car">
+        <view class="picture-car-content">
+          <view class='content-imga'>
+            <image src="../../assets/images/02.png"></image>
+          </view>
+          <text class="picture-car-title">麦田救灾演绎军民鱼水情</text>
+          <view class="picture-car-price">
+            <text class="car-price"><text class="symbol">￥</text>
+            <text class='price-num'>10</text></text>
+            <text class="car-state car-state-darkred">审核中</text>
+          </view>
+        </view>
+      </view>
+      <view class="picture-car">
+        <view class="picture-car-content">
+          <view class='content-imgb'>
+            <image src="../../assets/images/02.png"></image>
+          </view>
+          <text class="picture-car-title">麦田救灾演绎军民鱼水情</text>
+          <view class="picture-car-price">
+            <text class="car-price"><text class="symbol">￥</text>
+            <text class='price-num'>10</text></text>
+            <text class="car-state">已下架</text>
+          </view>
+        </view>
+      </view>
+      <view class="picture-car">
+        <view class="picture-car-content">
+          <view class='content-imgb'>
+            <image src="../../assets/images/02.png"></image>
+          </view>
+          <text class="picture-car-title">麦田救灾演绎军民鱼水情</text>
+          <view class="picture-car-price">
+            <text class="car-price"><text class="symbol">￥</text>
+            <text class='price-num'>10</text></text>
+            <text class="car-state">已下架</text>
+          </view>
+        </view>
+      </view>
+      <view class="picture-car">
+        <view class="picture-car-content">
+          <view class='content-imgb'>
+            <image src="../../assets/images/02.png"></image>
+          </view>
+          <text class="picture-car-title">麦田救灾演绎军民鱼水情</text>
+          <view class="picture-car-price">
+            <text class="car-price"><text class="symbol">￥</text>
+            <text class='price-num'>10</text></text>
+            <text class="car-state">已下架</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!--卖图按钮-->
+  <view class="maitu" bindtap='realname'>
+    <text class="maitu-btn">卖图</text>
+  </view>
+</view>

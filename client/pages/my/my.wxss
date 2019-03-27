@@ -1,0 +1,163 @@
+/* pages/my/my.wxss */
+@import "../../Componet/componet.wxss";
+page {
+  background: #f5f5f5;
+}
+
+.container{
+  padding-bottom: 50rpx;
+}
+
+.mybg {
+  width: 100%;
+  height: 322rpx;
+  display: flex;
+  justify-content: space-between;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.personal {
+  display: flex;
+  flex-direction: row;
+  padding-left: 74rpx;
+  margin-top: 64rpx;
+}
+
+.personal-img {
+  width: 120rpx;
+  height: 120rpx;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.personal-img .item-img {
+  display: inline-block;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+
+.personal-name {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30rpx;
+}
+
+.item-name {
+  margin-bottom: 10rpx;
+}
+
+.item-name text {
+  font-size: 36rpx;
+  color: #fff;
+  font-weight: bold;
+}
+
+.item-name image {
+  padding-left: 21rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.real-name {
+  width: 188rpx;
+  height: 46rpx;
+  border-radius: 23rpx;
+  background-color: #eda814;
+  text-align: center;
+  margin-top: 21rpx;
+}
+
+.real-name text {
+  font-size: 24rpx;
+  color: #fff;
+  position: relative;
+  top: -4rpx;
+  left: 5rpx;
+}
+
+.set-up {
+  margin-top: 50rpx;
+  padding-right: 42rpx;
+  position: relative;
+  left: 205rpx;
+}
+
+.set-up text {
+  font-size: 30rpx;
+  color: #b95b0e;
+}
+
+.personal-content {
+  background: #fff;
+  padding: 0 40rpx;
+}
+
+.personal-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 56rpx 0;
+}
+
+.personal-list .personal-list-text {
+  font-size: 30rpx;
+  color: #333;
+}
+
+.personal-list .personal-list-image {
+  margin-top: 6rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.person-line {
+  width: 100%;
+  height: 2rpx;
+  background: #f5f5f5;
+}
+
+.name-already {
+  width: 22rpx;
+  height: 24rpx;
+  position: relative;
+  right: 10rpx;
+}
+
+.set-img {
+  width: 51rpx;
+  height: 48rpx;
+}
+
+.container-goname {
+  width: 154rpx;
+  height: 58rpx;
+  background: linear-gradient(to right, #eca713, #f4cd30);
+  border-top-left-radius: 29rpx;
+  border-bottom-left-radius: 29rpx;
+  position: relative;
+  top: 174rpx;
+}
+
+.goname-img {
+  width: 28rpx;
+  height: 28rpx;
+  margin-left: 15rpx;
+  margin-top: 17rpx;
+}
+
+.container-goname text {
+  color: #fff;
+  font-size: 24rpx;
+  position: relative;
+  top: -5rpx;
+  left: 8rpx;
+}
+
+.goname-fwd {
+  width: 15rpx;
+  height: 13rpx;
+  position: relative;
+  left: 15rpx;
+  top: -6rpx;
+}

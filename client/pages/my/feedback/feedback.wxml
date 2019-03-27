@@ -1,0 +1,14 @@
+<!--pages/my/feedback/feedback.wxml-->
+<view>
+  <form>
+    <view class="feedcack">
+      <textarea class="feedcack-text" placeholder="请输入您的意见" maxlength="200" bindinput="handleContentInput"></textarea>
+       <view class="feedcack-text-counter">{{contentCount}}/200</view>
+    </view>
+    <view class="btnbox">
+        <view class="info-btn">
+          <button class="btn-bule-real" type="primary">提交</button>
+        </view>
+      </view>
+  </form>
+</view>

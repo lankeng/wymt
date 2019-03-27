@@ -1,0 +1,163 @@
+{
+	"client": "client/",
+	"svr": "server/",
+	"miniprogramRoot": "client/",
+	"qcloudRoot": "server/",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"appid": "wx545303d3fd0025ab",
+	"projectname": "%E6%88%91%E8%A6%81%E5%8D%96%E5%9B%BE1",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 20,
+			"list": [
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/my/my",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人账户",
+					"pathName": "pages/my/account/account",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "零钱提现",
+					"pathName": "pages/my/account/drawmoney/drawmoney",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "编辑信息",
+					"pathName": "pages/my/editinfo/editinfo",
+					"query": ""
+				},
+				{
+					"id": 4,
+					"name": "修改手机号验证",
+					"pathName": "pages/my/editphone/editphone",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "确认密码",
+					"pathName": "pages/my/editphone/newsphone/newsphone",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "登录授权",
+					"pathName": "pages/login/login-index/login-index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "卖图记录",
+					"pathName": "pages/my/Imagerecords/Imagerecords",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "搜索结果",
+					"pathName": "pages/search/search",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "卖图记录",
+					"pathName": "pages/uploadimg/uploadimg",
+					"query": ""
+				},
+				{
+					"id": 10,
+					"name": "zujian",
+					"pathName": "Componet/select/select",
+					"query": ""
+				},
+				{
+					"id": 11,
+					"name": "上传图片",
+					"pathName": "pages/uploadimg/uploadimg",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "已上传图片",
+					"pathName": "pages/alupimg/alupimg",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的图库",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "提现记录",
+					"pathName": "pages/my/wrecord/wrecord",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "手机快捷登录",
+					"pathName": "pages/login/login-form/login-form",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "实名认证",
+					"pathName": "pages/autonym/autonym",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "零钱提现",
+					"pathName": "pages/my/account/drawmoney/drawmoney",
+					"query": ""
+				},
+				{
+					"id": 18,
+					"name": "修改手机号",
+					"pathName": "pages/my/editphone/newsphone/newsphone",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "最新图片",
+					"pathName": "pages/newpicture/newpicture",
+					"query": ""
+				},
+				{
+					"id": 20,
+					"name": "图片详情",
+					"pathName": "pages/picdetail/picdetail",
+					"query": ""
+				}
+			]
+		}
+	}
+}

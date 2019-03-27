@@ -1,0 +1,42 @@
+<view class='alimg'>
+  <view class='alimg-auimg'>
+    <image class='auimg-img' src='/assets/images/shizi_03.png'></image>
+  </view>
+  <view class='alimg-state'>
+    当前状态：待审核/售卖中/已卖出/已下架
+  </view>
+  <view class='alimg-title'>
+    <text class='title-tl'>标题：</text>
+    <text class='title-cont'>荥阳崔庙镇郑岗村柿子红了</text>
+  </view>
+  <view class='alimg-title'>
+    <view>
+      <text class='title-tl'>售卖价格：</text>
+      <text class='title-util'>（单位：元）</text>
+    </view>
+    <view class='alimg-money'>
+      <text class='title-str'>¥</text>
+      <text class='title-num'>90</text>
+    </view>
+  </view>
+  <view class='alimg-title'>
+    <text class='title-tl'>分类：</text>
+    <text class='title-cont'>风景</text>
+  </view>
+  <view class='alimg-title'>
+    <text class='title-tl'>标签：</text>
+    <text class='title-cont'>风景、柿子、丰收</text>
+  </view>
+  <view class='alimg-title'>
+    <text class='title-tl'>拍摄设备：</text>
+    <text class='title-cont'>iphoneX</text>
+  </view>
+  <view class='alimg-title'>
+    <text class='title-tl'>拍摄地点：</text>
+    <text class='title-cont'>河南</text>
+  </view>
+  <view class='alimg-title'>
+    <text class='title-tl'>简介：</text>
+    <text class='title-cont'>暂无</text>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+/* pages/my/editphone/newsphone/newsphone.wxss */
+@import "../../editphone/editphone.wxss";
+
+.cei-txt{
+  font-size: 30rpx;
+  color: #333333;
+}
+.cei-txta{
+  font-size:30rpx;
+color:#333333;
+line-height:102rpx;
+float:left;
+padding:0 30rpx;
+
+}
+.card-edit-inputnumbera{
+  font-size:30rpx;
+float:right;
+height:105rpx;
+line-height:105rpx;
+width:79%;
+}
+.clearfix::after{
+  content: '';
+  display: block;
+  zoom: 1;
+  clear: both
+}

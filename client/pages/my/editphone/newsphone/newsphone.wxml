@@ -1,0 +1,22 @@
+<!--pages/my/editphone/newsphone/newsphone.wxml-->
+<view class="other">
+  <text>请输入您的新密码</text>
+</view>
+<view class="card-edit">
+  <form>
+    <view class="card-edit-input clearfix">
+      <view class='cei-txta'>新密码</view>
+      <input type="password" class="card-edit-inputnumbera" placeholder="新密码"></input>
+    </view>
+    <view class="card-line"></view>
+    <view class="card-edit-input clearfix">
+      <view class='cei-txta'>新密码</view>
+      <input type="password" class="card-edit-inputnumbera" placeholder="确认密码"></input>
+    </view>
+    <view class="btnbox card-btn ">
+      <view>
+        <button class="btn-bule-real" type="primary">完成</button>
+      </view>
+    </view>
+  </form>
+</view>

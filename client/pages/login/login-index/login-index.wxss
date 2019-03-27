@@ -1,0 +1,40 @@
+/* pages/login/login-index/login-index.wxss */
+.cross{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 42rpx;
+}
+.cross .cross-line{
+   margin: 0 45rpx ;
+   background: red;
+   position: relative;
+}
+.cross-title{
+    display: block;
+    text-align: center;
+    position: relative;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 14px;
+    background: #fff;
+    color:rgba(153,153,153,1);
+}
+ .cross-title::before{
+    content: "";
+    width: 34%;
+    height: 2rpx;
+    background:rgba(238,238,238,1);
+    position: absolute;
+    left: 0;
+    top: 40rpx;
+
+} 
+.cross-title::after{
+    content: "";
+    width: 34%;
+    height: 2rpx;
+    background:rgba(238,238,238,1);
+    position: absolute;
+    right: 0rpx;
+    top: 40rpx;
+}

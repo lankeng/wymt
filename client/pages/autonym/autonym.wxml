@@ -1,0 +1,35 @@
+<!--pages/autonym/autonym.wxml-->
+<view class="autonym-top">
+  <view class="autonym-top-content">
+    <image src="../../assets/images/shimingtitle.png" class="autonym-top-img"></image>
+    <text class="autonym-top-title">上传材料进行身份认证</text>
+  </view>
+  <view class="autonym-middle">
+      <view wx:if="{{isAutonym}}" class="autonym-middle-line" catchtap="chooseImageTap">
+        <image class="middle-lineimg" src="../../assets/images/shiming2.png"></image>
+        <image class="middle-addimg" src="../../assets/images/jiahao.png"></image>
+      </view>
+      <view wx:else class="middle-original">
+        <image class="middle-original-img" src="{{item1}}" data-index="{{index}}" catchtap="chooseImageTap"></image>
+      </view>
+      <view class="autonym-prompt">A.身份证正面</view>
+  </view>
+  <view class="autonym-middle">
+      <view wx:if="{{isAutonymtwo}}" class="autonym-middle-line" catchtap="chooseImageBot">
+        <image class="middle-lineimg" src="../../assets/images/shiming1.png"></image>
+        <image class="middle-addimg" src="../../assets/images/jiahao.png"></image>
+      </view>
+      <view wx:else class="middle-original">
+        <image class="middle-original-img" src="{{item2}}" data-index="{{index}}" catchtap="chooseImageBot"></image>
+      </view>
+      <view class="autonym-prompt">B.身份证反面</view>
+  </view>
+  <view class="btnbox">
+  <view>
+    <button class="btn-bule-real" disabled="{{disabled}}"  type="primary" bindtap='tosubmit'>提交</button>
+  </view>
+</view>
+</view>
+<view class='suc-save' animation="{{alphaData}}">
+提交成功
+</view>

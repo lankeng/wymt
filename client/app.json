@@ -1,0 +1,57 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/login/login-index/login-index",
+    "pages/login/login-form/login-form",
+    "pages/my/my",
+    "pages/my/account/account",
+    "pages/autonym/autonym",
+    "pages/my/editinfo/editinfo",
+    "pages/my/Imagerecords/Imagerecords",
+    "pages/my/feedback/feedback",
+    "pages/my/editphone/editphone",
+    "pages/my/editphone/newsphone/newsphone",
+    "pages/my/account/drawmoney/drawmoney",
+    "pages/search/search",
+    "pages/uploadimg/uploadimg",
+    "Componet/select/select",
+    "pages/alupimg/alupimg",
+    "pages/newpicture/newpicture",
+    "pages/my/help/help",
+    "pages/my/wrecord/wrecord",
+    "pages/picdetail/picdetail"
+  ],
+  "window":{
+    "backgroundColor":"#F6F6F6",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "我要卖图",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#333333",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/newpicture/newpicture",
+        "text": "最新图片",
+        "iconPath": "assets/tabs/newpic.png",
+        "selectedIconPath": "assets/tabs/newpic_active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的图库",
+        "iconPath": "assets/tabs/biaoliao.png",
+        "selectedIconPath": "assets/tabs/baoliao_active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "个人中心",
+        "iconPath": "assets/tabs/my.png",
+        "selectedIconPath": "assets/tabs/my_active.png"
+      }
+    ]
+  }
+}

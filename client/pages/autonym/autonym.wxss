@@ -1,0 +1,87 @@
+/* pages/autonym/autonym.wxss */
+.autonym-top-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 180rpx;
+  background: #f5f5f5;
+}
+
+.autonym-top-img {
+  margin: 20rpx auto 14rpx;
+  display: inline-block;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+}
+
+.autonym-top-title {
+  display: inline-block;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.autonym-middle {
+  margin: 30rpx;
+  border: 2rpx dashed #ccc;
+}
+
+.autonym-middle-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 30rpx 100rpx;
+}
+
+.autonym-middle-line .middle-lineimg {
+  display: inline-block;
+  padding-bottom: 55rpx;
+  padding-top: 68rpx;
+  width: 213rpx;
+  height: 120rpx;
+}
+
+.autonym-middle-line .middle-addimg {
+  display: inline-block;
+  padding-top: 90rpx;
+  padding-bottom: 73rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.middle-original .middle-original-img{
+  width: 100%;
+  height: 345rpx;
+}
+
+.autonym-prompt {
+  display: block;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #B95B0E;
+  background: #FFD119;
+}
+button[disabled][type=primary] {
+background-color:#CCC;
+border: 1rpx solid #f5f5f5;
+height:88rpx;
+margin-top: 88rpx;
+line-height: 88rpx
+}
+button::after{
+border: none;
+}
+.suc-save{
+  width: 100%;
+  height: 64rpx;
+  background-color: #09BB07;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 24rpx;
+  line-height: 64rpx;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+}

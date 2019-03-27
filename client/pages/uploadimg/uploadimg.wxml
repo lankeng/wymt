@@ -1,0 +1,70 @@
+<view class='upimg'>
+  <view class="autonym-middle">
+    <view wx:if="{{isAutonym}}" class="autonym-middle-line" catchtap="chooseImageTap">
+      <image class="middle-lineimg" src="/assets/images/camera.png"></image>
+      <view class='middle-text'>添加照片</view>
+    </view>
+    <view wx:else class="middle-original">
+      <image class="middle-original-img" src="{{item1}}" data-index="{{index}}" catchtap="chooseImageTap"></image>
+    </view>
+  </view>
+  <view class='allipt-ifa'>提示：建议上传您相册中不涉及隐私，有具体场景或事物的相片。</view>
+  <view class='uimg-allipt'>
+    <text class='allipt-title'>标题:</text>
+    <text class='allipt-text'>（限20字）</text>
+    <input type='text' class='allipt-ipt'></input>
+  </view>
+  <view class='uimg-allipt'>
+    <text class='allipt-title'>售卖价格 :</text>
+    <text class='allipt-text'>（单位:元）</text>
+    <input type='text' class='allipt-ipt'></input>
+    <view class='allipt-if'>提示：如果您不定价，系统将自动给您定合适的参考价。</view>
+  </view>
+  <!-- <view class='uimg-allipt{{chge?"a":""}}'>
+  <text class='allipt-title'>分类：</text>
+  <Select prop-array='{{selectArray}}' bind:myget='getDate' catchtap="chge"></Select>
+  </view> -->
+  <view class='uimg-allipt'>
+    <picker mode="selector" range="{{array}}" value="{{index}}" bindchange="listenerPickersex">
+      <view>
+        <view>
+          <text class='allipt-title'>分类：</text>
+        </view>
+        <view class='allipt-ipt clearfix'>
+          <text>{{array[index]}}</text>
+          <image src="/assets/images/down.png" class='ipt-img'></image>
+        </view>
+      </view>
+    </picker>
+  </view>
+  <view class='uimg-allipt'>
+    <text class='allipt-title'>标签：</text>
+    <input type='text' class='allipt-ipt'></input>
+  </view>
+  <view class='uimg-allipt'>
+    <picker mode="selector" range="{{arraya}}" value="{{indexa}}" bindchange="listenerPickersexa">
+      <view>
+        <view>
+          <text class='allipt-title'>设备</text>
+        </view>
+        <view class='allipt-ipt clearfix'>
+          <text>{{arraya[indexa]}}</text>
+          <image src="/assets/images/down.png" class='ipt-img'></image>
+        </view>
+      </view>
+    </picker>
+  </view>
+  <view class='uimg-allipt'>
+    <text class='allipt-title'>地点：</text>
+    <input type='text' class='allipt-ipt'></input>
+  </view>
+  <view class='uimg-allipt'>
+    <text class='allipt-title'>简介：</text>
+    <text class='allipt-text'>（限200字）</text>
+    <textarea type='text' class='allipt-txta'></textarea>
+  </view>
+  <button class='upimg-btn' bindtap='tosubmit'>提交审核</button>
+</view>
+<view class='suc-save' animation="{{alphaData}}">
+提交成功
+</view>

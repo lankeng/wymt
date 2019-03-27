@@ -1,0 +1,57 @@
+.auimg-img {
+  width: 690rpx;
+  height: 396rpx;
+  border-radius: 8rpx;
+}
+
+.alimg-auimg {
+  width: 690rpx;
+  margin: auto;
+}
+
+.alimg {
+  width: 100%;
+  padding-top: 41rpx;
+  padding-bottom: 225rpx;
+}
+
+.alimg-state {
+  color: #fe5c55;
+  font-size: 26rpx;
+  margin-left: 32rpx;
+  margin-top: 20rpx;
+}
+
+.title-tl {
+  color: #000;
+  font-size: 26rpx;
+}
+
+.title-cont {
+  color: #666;
+  font-size: 24rpx;
+}
+
+.alimg-title {
+  margin-left: 32rpx;
+  margin-top: 41rpx;
+}
+
+.title-util {
+  color: #ccc;
+  font-size: 26rpx;
+}
+
+.title-str {
+  font-size: 22rpx;
+  color: #e05447;
+}
+
+.title-num {
+  font-size: 36rpx;
+  color: #e05447;
+}
+
+.alimg-money {
+  margin-top: 13rpx;
+}
